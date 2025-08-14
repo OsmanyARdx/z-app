@@ -16,7 +16,7 @@ export default function HomeScreen() {
                 />
             }>
             <ThemedView style={styles.stepContainer}>
-                <ThemedText type="subtitle">The Nissan Z</ThemedText>
+                <ThemedText type="subtitle">Maintenance Log</ThemedText>
                 <ThemedText>
                     Modern app for <ThemedText type="defaultSemiBold">Z</ThemedText> owners and community.
                 </ThemedText>

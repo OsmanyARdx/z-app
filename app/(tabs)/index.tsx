@@ -11,17 +11,17 @@ export default function HomeScreen() {
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
       headerImage={
         <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
+          source={require('@/assets/images/z-icon.jpg')}
+          style={styles.homeLogo}
         />
       }>
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">Welcome to the Z App!</ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Connect to your Z</ThemedText>
+        <ThemedText type="subtitle">Instructions: Connect to your Z</ThemedText>
         <ThemedText>
-          Connect to the port on the 300zx typically located under the steering column.
+          Connect to the port on the 300zx typically located under the steering column, and the phone with the data cable.
           Once connected click the{' '}
           <ThemedText type="defaultSemiBold">
             link
@@ -29,13 +29,13 @@ export default function HomeScreen() {
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Diagnosis</ThemedText>
+        <ThemedText type="subtitle">Diagnosis</ThemedText>
         <ThemedText>
           {`Once connected you can run diagnostics in the Diag tab, or display sensor outputs.`}
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Document your work</ThemedText>
+        <ThemedText type="subtitle">Document your work</ThemedText>
         <ThemedText>
           {`You can also use this app to document the work comepleted to the car: `}
         </ThemedText>
@@ -62,6 +62,13 @@ const styles = StyleSheet.create({
   reactLogo: {
     height: 178,
     width: 290,
+    bottom: 0,
+    left: 0,
+    position: 'absolute',
+  },
+  homeLogo: {
+    height: '100%',
+    width: '100%',
     bottom: 0,
     left: 0,
     position: 'absolute',
