@@ -1,7 +1,34 @@
-# Welcome to your Expo app 👋
+# Welcome to the Z-APP
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Why
 
+- **Problem Statement:**
+    - Everything built for Z’s are old. The available apps/software for connecting to the ECUs in the cars are old and dated, missing functionalities and should be FREE at this point.
+- **Solution**:
+    - To create a modern solution for diagnostics, logging, community, and more. All open-source and should hopefully get some help coming in.
+    Target Audience: Nissan Z owners, more specifically: 300zx owners (maybe ODB2 vehicles too).
+- **Unique Selling Proposition (USP):**
+    - Every software for these cars is paid. Stop paying for software from the 90s. It should be free at this point, and this will bring value to the car community as well as interest in keeping old cars alive, by simplifying old tech with today’s standards.
+
+## Features
+
+Feature 1: Connect to ECU for data reading
+
+Feature 2: Maintance Logs - Keep your car's documentation up to date
+
+Feature 3: TBA
+
+## Build
+
+### Technology Stack
+
+- **Frontend:**
+    - **React Native:** Your chosen framework.
+    - **Expo:** (`expo`) For development, build, and deployment.
+    - **Expo Router:** (`expo-router`) For file-system based routing.
+    - **React:** (`react`) Core library.
+    - **TypeScript:** (`typescript`) For type safety and better developer experience.
+    
 ## Get started
 
 1. Install dependencies
@@ -13,38 +40,5 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 2. Start the app
 
    ```bash
-   npx expo start
+   npm run start
    ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
