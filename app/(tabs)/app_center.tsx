@@ -4,7 +4,7 @@ import { ScrollView, StyleSheet } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
 
-export default function TabTwoScreen() {
+export default function AppCenterScreen() {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.container} edges={['top']}>
