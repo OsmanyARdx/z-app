@@ -23,7 +23,7 @@ Feature 3: TBA
 ### Technology Stack
 
 - **Frontend:**
-    - **React Native:** Your chosen framework.
+    - **React Native:** Current framework.
     - **Expo:** (`expo`) For development, build, and deployment.
     - **Expo Router:** (`expo-router`) For file-system based routing.
     - **React:** (`react`) Core library.
@@ -42,3 +42,5 @@ Feature 3: TBA
    ```bash
    npm run start
    ```
+
+3. To view app in a iphone/android device: download the "expo go" app from the store and scan the QR code from the terminal when you run the start.
