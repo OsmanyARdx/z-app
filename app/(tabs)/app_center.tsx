@@ -1,7 +1,7 @@
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import React from 'react';
-import { Pressable, SectionList, StyleSheet, View } from 'react-native';
+import { Button, SectionList, StyleSheet, View } from 'react-native';
 
 export default function AppCenterScreen() {
 
@@ -27,9 +27,11 @@ export default function AppCenterScreen() {
           keyExtractor={(item, index) => item + index}
           renderItem={({ item }) => (
             <View style={styles.container}>
-              <Pressable onPress={() => console.log("helloworld")}>
-                <ThemedText>{item}</ThemedText>
-              </Pressable>
+              <Button
+                title={item}
+                color={"rgba(50, 50, 50, 1)"}
+                onPress={() => console.log(`pressed`)}
+              />
             </View>
           )}
           renderSectionHeader={({ section: { title } }) => (
@@ -53,5 +55,11 @@ const styles = StyleSheet.create({
     fontSize: 42,
     padding: 12,
     color: 'rgba(255, 255, 255, 1)'
+  },
+  roundedView: {
+    flex: 1,
+    backgroundColor: 'rgba(0, 171, 193, 1)',
+    borderRadius: 10,
+    padding: 5,
   }
 });

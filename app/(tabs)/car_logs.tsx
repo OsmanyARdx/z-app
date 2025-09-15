@@ -84,7 +84,7 @@ export default function CarLogsScreen() {
                 />
             </View>
             <View style={styles.changeImageButtonContainer}>
-                <Button title="Change Car Image" onPress={pickImage} />
+                <Button title="Change Car Image" color={"rgba(50, 50, 50, 1)"} onPress={pickImage} />
             </View>
             <ThemedView style={styles.stepContainer}>
                 <ThemedText type="subtitle">Maintenance Log</ThemedText>
