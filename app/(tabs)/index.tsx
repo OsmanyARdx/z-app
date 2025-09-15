@@ -37,7 +37,7 @@ export default function HomeScreen() {
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Document your work</ThemedText>
         <ThemedText>
-          {`You can also use this app to document the work comepleted to the car: `}
+          {`You can also use this app to document the work comepleted to the car.`}
         </ThemedText>
       </ThemedView>
       <Button
