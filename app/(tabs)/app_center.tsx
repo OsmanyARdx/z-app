@@ -17,6 +17,10 @@ export default function AppCenterScreen() {
     {
       title: 'DIY',
       data: ['Custom Dash', 'Trip Management'],
+    },
+    {
+      title: 'INFO',
+      data: ['Owner\'s Manual'],
     }
   ];
   return (

@@ -1,51 +1,41 @@
-import { Image } from 'expo-image';
-import { Alert, Button, StyleSheet } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
-import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
+
+import React from 'react';
+import {
+  GaugeBattery,
+  GaugeSpeedometer,
+  GaugeTachometer
+} from 'react-native-vehicle-gauges';
 
 export default function HomeScreen() {
+  const [speed, setSpeed] = React.useState(10);
+  const [rpm, setRpm] = React.useState(3500);
+  const [voltage, setVoltage] = React.useState(12.6);
+
   return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
-      headerImage={
-        <Image
-          source={require('@/assets/images/z-icon.jpg')}
-          style={styles.homeLogo}
-        />
-      }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome to the Z App!</ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Instructions: Connect to your Z</ThemedText>
-        <ThemedText>
-          Connect to the port on the 300zx typically located under the steering column, and the phone with the data cable.
-          Once connected click the{' '}
-          <ThemedText type="defaultSemiBold">
-            link
-          </ThemedText> button below.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Diagnosis</ThemedText>
-        <ThemedText>
-          {`Once connected you can run diagnostics in the Diag tab, or display sensor outputs.`}
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Document your work</ThemedText>
-        <ThemedText>
-          {`You can also use this app to document the work comepleted to the car.`}
-        </ThemedText>
-      </ThemedView>
-      <Button
-        title="Link"
-        color={"rgba(50, 50, 50, 1)"}
-        onPress={() => Alert.alert('Simple Button pressed')}
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <GaugeSpeedometer
+        speed={speed}
+        maxSpeed={180}
+        redlineSpeed={140}
+        units="mph"
+        size={{ width: 300, height: 300 }}
       />
-    </ParallaxScrollView>
+
+      <GaugeTachometer
+        rpm={rpm}
+        maxRpm={8000}
+        redlineRpm={6500}
+        size={{ width: 300, height: 300 }}
+      />
+
+      <GaugeBattery
+        voltage={voltage}
+        lowVoltage={12.0}
+        size={{ width: 300, height: 150 }}
+      />
+    </View>
   );
 }
 

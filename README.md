@@ -71,3 +71,10 @@ Feature 3: TBA
    - A list of the maintenance logs done to this car. This should contain (Maintenance description, Mile mark, and date ) Will be pulled from a .txt file or maybe a mongodb, and will be constantly updated by user.
    - A add log entry with all the fields mentioned above. ( This will add a new entry to be documented )
    ```
+
+4. Make an onboarding tutorial:
+
+   ```bash
+   - The onboarding tutorial will guide the user on how the app works.
+   - Will help the user make an initial connection with diagnostics tool.
+   ```
