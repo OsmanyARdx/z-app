@@ -1,4 +1,4 @@
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, ScrollView} from 'react-native';
 
 
 import React from 'react';
@@ -14,7 +14,7 @@ export default function HomeScreen() {
   const [voltage, setVoltage] = React.useState(12.6);
 
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <ScrollView  contentContainerStyle={{ padding: 20, justifyContent: 'center', alignItems: 'center'}}>
       <GaugeSpeedometer
         speed={speed}
         maxSpeed={180}
@@ -35,7 +35,9 @@ export default function HomeScreen() {
         lowVoltage={12.0}
         size={{ width: 300, height: 150 }}
       />
-    </View>
+
+    </ScrollView>
+
   );
 }
 
